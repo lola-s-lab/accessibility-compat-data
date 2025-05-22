@@ -1,1 +1,9 @@
-# accessibility-compat-data
+# Accessibility Compat Data (ACD)
+
+## Background
+The [Browser Compat Data](https://github.com/mdn/browser-compat-data) (BCD) project is a "machine-readable browser (and JavaScript runtime) compatibility data for Web technologies", this data is presented on MDN so that web developers can see the interoperability data for a given web feature, it's used in [Baseline](https://developer.mozilla.org/en-US/blog/baseline-unified-view-stable-web-features/) to measure what web features are "baseline", and many other developer tools. However, BCD doesn't give any information on the accessibility of a given feature, which means the tools that rely on BCD also don't take accessibility into consideration.
+
+In 2024 the Interop Group made Accessibility a focus area and have carried that on into [2025](https://github.com/web-platform-tests/interop-accessibility/issues/148), part of the investigation area involves expanding the test suite to include expectations for various aria roles and attributes. However, this only tells part of the story, developers and tool maintainers want a way to know how web features are spoken or presented in AT-browser combinations. [aria-at](https://aria-at.w3.org) already does something similar to this, it provides interoperability reports for screen-reader-browser combinations however, it's been heavily focussed on APG. [a11ysupport.io](a11ysupport.io) also provides interoperability data but this is only for aria attributes.
+
+## Proposal
+I've launched a project, [Accessibility Compat Data](https://lolaslab.co/blog/2025/accessibility-compat-data/) (currently in the investigation phase), with the aim of creating a dataset similar to BCD which includes AT-browser compatibility data for web features. The dataset will be machine-readable and show how web features are presented in various AT-browser combinations, developer resources like MDN and Baseline will be able to read and present the data to users which will hopefully lead to more informed web development and accessible web experiences.
