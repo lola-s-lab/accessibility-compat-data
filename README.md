@@ -1,5 +1,7 @@
 # Accessibility Compat Data (ACD)
 
+**Note: For now, this repo documents the first phase of the Accessibility Compat Data project.**
+
 ## Background
 The [Browser Compat Data](https://github.com/mdn/browser-compat-data) (BCD) project is a "machine-readable browser (and JavaScript runtime) compatibility data for Web technologies", this data is presented on MDN so that web developers can see the interoperability data for a given web feature, it's used in [Baseline](https://developer.mozilla.org/en-US/blog/baseline-unified-view-stable-web-features/) to measure what web features are "baseline", and many other developer tools. However, BCD doesn't give any information on the accessibility of a given feature, which means the tools that rely on BCD also don't take accessibility into consideration.
 
