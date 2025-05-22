@@ -9,3 +9,26 @@ In 2024 the Interop Group made Accessibility a focus area and have carried that 
 
 ## Proposal
 This project, [Accessibility Compat Data](/proposal.md) (currently in the investigation phase), aims to create a dataset similar to BCD which includes AT-browser compatibility data for web features. The dataset will be machine-readable and show how web features are presented in various AT-browser combinations, developer resources like MDN and Baseline will be able to read and present the data to users which will hopefully lead to more informed web development and accessible web experiences. Have a read of the [proposal](/proposal.md) for more details and please don't hesitate to open an issue if you have questions.
+
+## Funding
+
+This project addresses a critical gap in the web platform: developers have no standardised, integrated way to understand how web features are supported by assistive technologies across different browsers. We know that developers already rely on tools like MDN and CanIUse to make decisions about browser support and this project extends that model to accessibility.
+
+This initial phase is focused on research, scoping and strategic alignment. I'm working closely with standards bodies, browser vendors, documentation platforms and assistive technology stakeholders to define the scope, data model and methodology needed to make this project a reality.
+
+To move this work forward, we’re seeking funding and support from organisations who understand the value of open-source infrastucture, developer enablement and the importance of accessible experiences. 
+
+Your support will directly contribute to:
+1. A shared, open dataset that helps developers understand real-world AT/browser interoperability
+2. Better web experiences for users of screen-readers (& in the future, other assistive tech)
+3. Accessibility interoperability data integrated into developer resources
+4. Reduced compliance burden through earlier, evidence-based decision making
+5. A more transparent and inclusive web ecosystem
+
+If your organisation is committed to accessibility and improving the developer experience, this is an opportunity to support foundational work that has the potential to reshape how accessibility is implemented and understood on the web.
+You can support by:
+- Directly emailing me: lola@lolaslab.co
+- [Sponsoring on Open Collective](https://give.lolaslab.co)
+- ~~GitHub Sponsors~~
+
+
