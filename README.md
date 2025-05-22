@@ -18,7 +18,7 @@ If you have any questions, please don't hesitate to open an issue.
 
 This project addresses a critical gap in the web platform: developers have no standardised, integrated way to understand how web features are supported by assistive technologies across different browsers. We know that developers already rely on tools like MDN and CanIUse to make decisions about browser support and this project extends that model to accessibility.
 
-This initial phase is focused on research, scoping and strategic alignment. I'm working closely with standards bodies, browser vendors, documentation platforms and assistive technology stakeholders to define the scope, data model and methodology needed to make this project a reality.
+This initial phase is focused on research, scoping and strategic alignment. I'm working closely with browser vendors, documentation platforms and assistive technology stakeholders to define the scope, data model and methodology needed to make this project a reality.
 
 To move this work forward, we’re seeking funding and support from organisations who understand the value of open-source infrastucture, developer enablement and the importance of accessible experiences. 
 
