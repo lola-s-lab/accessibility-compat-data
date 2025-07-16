@@ -1,12 +1,16 @@
 # Technical Gap Analysis and Scope
 
+## Background
+Despite decades of progress in web standards and accessibility guidelines, real-world interoperability between assistive technologies and browsers remains inconsistent and undocumented in mainstream developer tools. Developers typically rely on resources like MDN and CanIUse to assess browser compatibility. However, these resources lack data on how assistive technologies interpret web features.
+
 Accessibility Compat Data (ACD) is a project aimed at improving web accessibility 
-by documenting browser and assistive tech support across the web platform.
+by documenting browser and assistive tech support across the web platform. ACD will provide:
+1. a structured way to track AT+browser support
+2. integration with popular developer tooling & resources
 
 Long-term, ACD could help identify patterns that inform spec clarifications, interoperability 
 guidance, or implementation notes. As the European Accessibility Act comes into effect, 
-many organisations are paying closer attention to their web presence and ensuring they are working 
-within the legislation. Additionally, there's increased pressure from accessibility advocates, 
+many organisations are paying closer attention to their web presence and ensuring they are working within the legislation. Additionally, there's increased pressure from accessibility advocates, 
 standards bodies, and legal professionals to ensure that assistive technology users have equitable access to the web.
 
 In June 2025, I ran multiple workshops with representatives from Mozilla, Microsoft, Google, 
@@ -17,7 +21,7 @@ especially since a major documentation platform reported receiving requests for 
 While the conversations and workshops have highlighted the need for ACD and surfaced alignment opportunities, 
 some gaps remain, especially regarding understanding edge case interoperability behaviours 
 and how this data should and can be displayed to developers.
-This report shares what was learned, what's still unkown and immediate next steps.
+This report shares what was learned, what's still unknown and immediate next steps.
 
 ## Technical Landscape & Gap Analysis
 There are various accessibility interoperability datasets, including but not limited to aria-at, a11ysupport.io, 
@@ -50,7 +54,7 @@ well-maintained, and properly integrated into existing systems.
 Additionally, assistive technologies work on an operating system level (unlike browsers) 
 and also have to interpret UI elements, prompts, and actions outside of the browser, 
 which adds another layer of complexity. The decisions that assistive technologies make 
-in regards to how or if to interpret various components happen internally, 
+regarding how or if to interpret various components, happen internally, 
 and don’t typically happen in standards organisations, which leads to varying user experiences.
 
 ## Scope
