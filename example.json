@@ -1,0 +1,59 @@
+"a": {
+    "chrome": [
+      "v140",
+      {
+        "nvda": ["v1.4", "supported"],
+        "jaws": ["v2.4", "supported"],
+      }
+    ],
+    "firefox": [
+      "v209",
+      {
+        "nvda": ["v1.4", "supported"],
+        "jaws": ["v2.4", "not supported"],
+      }
+    ],
+    "edge": [
+      "v56",
+      {
+        "nvda": ["v1.4", "not supported"],
+        "jaws": ["v2.4", "supported"],
+      }
+    ]
+    "safari": [
+      "v45",
+      {
+        "voice-over": ["v1.4", "supported"],
+      }
+    ]
+  "href": {
+    "chrome": [
+      "v300",
+      {
+        "nvda": ["v1.6", "supported"],
+        "jaws": ["v40.4", "supported"],
+      }
+    ],
+    "firefox": [
+      "v209",
+      {
+        "nvda": ["v1.4", "supported"],
+        "jaws": ["v2.4", "not supported"],
+      }
+    ],
+    "edge": [
+      "v56",
+      {
+        "nvda": ["v1.4", "not supported"],
+        "jaws": ["v2.4", "supported"],
+      }
+    ]
+    "safari": [
+      "v45",
+      {
+        "voice-over": ["v1.4", "supported"],
+      }
+    ]
+  }
+  "note": "There may be some specific notes we want to call out here or in the accessibility considerations section."
+}
