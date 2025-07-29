@@ -10,31 +10,33 @@
             "web-features:highlight"
           ],
           "support": {
-            "chrome/nvda": [
-              {
-                "version_added": "105/8.8",
-                "devices": ["Linux", "Windows", "macOS"]
-              },
-              {
-                "version_added": "105/6.6",
-                "devices": ["Linux", "Windows"]
-              },
-              {
-                "version_added": "105/false",
-                "devices": ["Linux", "Windows", "macOS"]
-              }
-            ],
+            "chrome/nvda": {
+                "version_added": false
+            },
             "chrome/jaws": {
-              "version_added": "105/false",
-              "devices": ["Linux", "Windows", "macOS"]
+              "version_added": false
+            },
+            "chrome_android/talkback": {
+              "version_added": false
             },
             "firefox/nvda": {
-              "version_added": "140/1.4",
-              "devices": ["Linux", "Windows", "macOS"]
+              "version_added": false
             },
-            "firefox/voiceover": {
+            "firefox/jaws": {
+              "version_added": "140/2025"
+            },
+            "firefox/voiceover_macos": {
               "version_added": "140/26",
-              "devices": ["macOS"],
+              "failures": [
+                {
+                  "category": "bad-context",
+                  "description": "Truncates the line and only starts reading from the highlight",
+                  "bug": "https://…"
+                }
+              ]
+            },
+            "firefox/voiceover_ios": {
+              "version_added": "140/26",
               "failures": [
                 {
                   "category": "bad-context",
@@ -44,16 +46,23 @@
               ]
             },
             "safari/nvda": {
-              "version_added": "17.2/false",
-              "devices": ["Linux", "Windows", "macOS"]
+              "version_added": false
             },
             "safari/jaws": {
-              "version_added": "17.6/false",
-              "devices": ["Linux", "Windows", "macOS"]
+              "version_added": false
             },
-            "safari/voiceover": {
+            "safari/voiceover_macos": {
               "version_added": "17.6/26",
-              "devices": ["macOS"],
+              "failures": [
+                {
+                  "category": "bad-context",
+                  "description": "Truncates the line and only starts reading from the highlight",
+                  "bug": "https://…"
+                }
+              ]
+            },
+            "safari_ios/voiceover_ios": {
+              "version_added": "17.6/26",
               "failures": [
                 {
                   "category": "bad-context",
