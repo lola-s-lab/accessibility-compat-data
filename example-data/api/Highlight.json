@@ -10,47 +10,57 @@
             "web-features:highlight"
           ],
           "support": {
-            "chrome": {
-              "version_added": "105",
-              "nvda": {
-                "version_added": false,
+            "chrome/nvda": [
+              {
+                "version_added": "105/8.8",
                 "devices": ["Linux", "Windows", "macOS"]
               },
-              "jaws": {
-                "version_added": false,
+              {
+                "version_added": "105/6.6",
+                "devices": ["Linux", "Windows"]
+              },
+              {
+                "version_added": "105/false",
                 "devices": ["Linux", "Windows", "macOS"]
               }
+            ],
+            "chrome/jaws": {
+              "version_added": "105/false",
+              "devices": ["Linux", "Windows", "macOS"]
             },
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "140",
-              "nvda": {
-                "version_added": "1.4",
-                "devices": ["Linux", "Windows", "macOS"]
-              },
-              "voiceover": {
-                "version_added": "26",
-                "devices": ["macOS"],
-                "partial_implementation": true,
-                "notes": "Truncates the line and only starts reading from the highlight."
-              }
+            "firefox/nvda": {
+              "version_added": "140/1.4",
+              "devices": ["Linux", "Windows", "macOS"]
             },
-            "safari": {
-              "version_added": "17.2",
-              "nvda": {
-                "version_added": false,
-                "devices": ["Linux", "Windows", "macOS"]
-              },
-              "jaws": {
-                "version_added": false,
-                "devices": ["Linux", "Windows", "macOS"]
-              },
-              "voiceover": {
-                "version_added": "26",
-                "devices": ["macOS"],
-                "partial_implementation": true,
-                "notes": "Truncates the line and only starts reading from the highlight."
-              }
+            "firefox/voiceover": {
+              "version_added": "140/26",
+              "devices": ["macOS"],
+              "failures": [
+                {
+                  "category": "bad-context",
+                  "description": "Truncates the line and only starts reading from the highlight",
+                  "bug": "https://…"
+                }
+              ]
+            },
+            "safari/nvda": {
+              "version_added": "17.2/false",
+              "devices": ["Linux", "Windows", "macOS"]
+            },
+            "safari/jaws": {
+              "version_added": "17.6/false",
+              "devices": ["Linux", "Windows", "macOS"]
+            },
+            "safari/voiceover": {
+              "version_added": "17.6/26",
+              "devices": ["macOS"],
+              "failures": [
+                {
+                  "category": "bad-context",
+                  "description": "Truncates the line and only starts reading from the highlight",
+                  "bug": "https://…"
+                }
+              ]
             }
           }
         }
