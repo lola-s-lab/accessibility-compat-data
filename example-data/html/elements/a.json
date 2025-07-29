@@ -1,0 +1,53 @@
+{
+  "html": {
+    "elements": {
+      "a": {
+        "a_without_href": {
+          "__compat": {
+            "description": "`<a>` (without `href` attribute)",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/HTML/Elements/a",
+            "spec_url": "https://w3c.github.io/html-aam/#el-a-no-href",
+            "tags": [
+              "web-features:a"
+            ],
+            "support": {
+              "chrome/nvda": {
+                "version_added": "1/1.4"
+              },
+              "chrome/jaws": {
+                "version_added": "1/2.4"
+              },
+              "chrome_android/talkback": {
+                "version_added": "1/1"
+              },
+              "firefox/nvda": {
+                "version_added": "1/1.4"
+              },
+              "firefox/jaws": {
+                "version_added": "1/2.4"
+              },
+              "firefox/voiceover_macos": {
+                "version_added": "1/1"
+              },
+              "firefox/voiceover_ios": {
+                "version_added": "1/1"
+              },
+              "safari/nvda": {
+                "version_added": "1/1.4"
+              },
+              "safari/jaws": {
+                "version_added": "1/2.4"
+              },
+              "safari/voiceover_macos": {
+                "version_added": "1/1"
+              },
+              "safari_ios/voiceover_ios": {
+                "version_added": "1/1"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
