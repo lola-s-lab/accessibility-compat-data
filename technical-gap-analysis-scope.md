@@ -1,7 +1,11 @@
 # Technical Gap Analysis and Scope
 
 ## Background
-Despite decades of progress in web standards and accessibility guidelines, real-world interoperability between assistive technologies and browsers remains inconsistent and undocumented in mainstream developer tools. Developers typically rely on resources like MDN and CanIUse to assess browser compatibility. However, these resources lack data on how assistive technologies interpret web features.
+Despite decades of progress in web standards and accessibility guidelines, 
+real-world interoperability between assistive technologies and browsers remains 
+inconsistent and undocumented in mainstream developer tools. 
+Developers typically rely on resources like MDN and CanIUse to assess 
+browser compatibility. However, these resources lack data on how assistive technologies interpret web features.
 
 Accessibility Compat Data (ACD) is a project aimed at improving web accessibility 
 by documenting browser and assistive tech support across the web platform. ACD will provide:
@@ -10,7 +14,8 @@ by documenting browser and assistive tech support across the web platform. ACD w
 
 Long-term, ACD could help identify patterns that inform spec clarifications, interoperability 
 guidance, or implementation notes. As the European Accessibility Act comes into effect, 
-many organisations are paying closer attention to their web presence and ensuring they are working within the legislation. Additionally, there's increased pressure from accessibility advocates, 
+many organisations are paying closer attention to their web presence and ensuring they are 
+working within the legislation. Additionally, there's increased pressure from accessibility advocates, 
 standards bodies, and legal professionals to ensure that assistive technology users have equitable access to the web.
 
 In June 2025, I ran multiple workshops with representatives from Mozilla, Microsoft, Google, 
