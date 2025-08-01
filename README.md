@@ -1,38 +1,72 @@
 # Accessibility Compat Data (ACD)
 
-**Note: For now, this repo documents the first phase of the Accessibility Compat Data project.**
+## What Is ACD?
+Accessibility Compat Data (ACD) is a project to document
+how web platform features are supported by assistive technologies (AT)
+across different browsers. Inspired by the Browser Compatibility Data (BCD) project
+which is integrated into developer resources like Mozilla Developer Network (MDN) and CanIUse,
+ACD aims to bring accessibility interoperability data into the same developer ecosystem.
 
-## Background
-The [Browser Compat Data](https://github.com/mdn/browser-compat-data) (BCD) project is a "machine-readable browser (and JavaScript runtime) compatibility data for Web technologies", this data is presented on MDN so that web developers can see the interoperability data for a given web feature, it's used in [Baseline](https://developer.mozilla.org/en-US/blog/baseline-unified-view-stable-web-features/) to measure what web features are "baseline", and many other developer tools. However, BCD doesn't give any information on the accessibility of a given feature, which means the tools that rely on BCD also don't take accessibility into consideration.
+## Why It Matters
+Currently, developers have no integrated way to check if a feature that 'works in a browser'
+is also accessible to people using screen readers or other AT.
+Tools like MDN show browser support, but not how screen readers interpret those features.
 
-In 2024 the Interop Group made Accessibility a focus area and have carried that on into [2025](https://github.com/web-platform-tests/interop-accessibility/issues/148), part of the investigation area involves expanding the test suite to include expectations for various aria roles and attributes. However, this only tells part of the story, developers and tool maintainers want a way to know how web features are spoken or presented in AT-browser combinations. [aria-at](https://aria-at.w3.org) already does something similar to this, it provides interoperability reports for screen-reader-browser combinations however, it's been heavily focussed on APG. [a11ysupport.io](a11ysupport.io) also provides interoperability data but this is only for aria attributes.
+Web features can be visible and functional in a browser but unusable with assistive tech.
 
-## Proposal
-This project, [Accessibility Compat Data](/proposal.md) (currently in the investigation phase), aims to create a dataset similar to BCD which includes AT-browser compatibility data for web features. The dataset will be machine-readable and show how web features are presented in various AT-browser combinations, developer resources like MDN and Baseline will be able to read and present the data to users which will hopefully lead to more informed web development and accessible web experiences. 
+ACD addresses this by:
 
-Have a read of the [proposal](/proposal.md) for more details, the [milestones](/milestones.md) and [KPIs](/kpis.md) also paint a clear picture about the projects objectives and targets. 
+1. Tracking how features behave across browser + AT combinations
+2. Surfacing this data in places developers already use
+3. Helping teams spot issues earlier and avoid costly accessibility fixes later
 
-If you have any questions, please don't hesitate to open an issue.
+## How is 'Accessible' Defined?
+We will be using the WCAG 2.1 definition of
+[accessibility-supported](https://www.w3.org/TR/WCAG21/#dfn-accessibility-supported).
 
-## Funding
+> The way that the web content technology is used must be supported
+> by users' assistive technology (AT). This means that the way that
+> the technology is used has been tested for interoperability with
+> users' assistive technology in the human language(s) of the content,
+>
+> AND
+>
+> The web content technology must have accessibility-supported
+> user agents that are available to users. [...] The technology
+> is supported natively in widely-distributed user agents
+> that are also accessibility supported (such as HTML and CSS);
 
-This project addresses a critical gap in the web platform: developers have no standardised, integrated way to understand how web features are supported by assistive technologies across different browsers. We know that developers already rely on tools like MDN and CanIUse to make decisions about browser support and this project extends that model to accessibility.
+This means that the browser has to expose the web feature
+to the accessibility tree **and** be supported by the AT.
 
-This initial phase is focused on research, scoping and strategic alignment. I'm working closely with browser vendors, documentation platforms and assistive technology stakeholders to define the scope, data model and methodology needed to make this project a reality.
+## Key Goals
+1. Define a machine-readable dataset to represent accessibility support for web features
+2. Integrate accessibility data into MDN and other developer tooling
+3. Support developers in building accessible experiences from the start
+4. Reduce compliance burdens by making accessibility interoperability data more visible
+5. Improve web experiences for users of assistive technologies
 
-To move this work forward, we’re seeking funding and support from organisations who understand the value of open-source infrastucture, developer enablement and the importance of accessible experiences. 
+## What ACD Is Not
+ACD is not an auditing tool and doesn’t evaluate entire websites. ACD does not define
+a baseline, or mark features as accessible or inaccessible.
 
-Your support will directly contribute to:
-1. A shared, open dataset that helps developers understand real-world AT/browser interoperability
-2. Better web experiences for users of screen-readers (& in the future, other assistive tech)
-3. Accessibility interoperability data integrated into developer resources
-4. Reduced compliance burden through earlier, evidence-based decision making
-5. A more transparent and inclusive web ecosystem
+## Current Focus (Research Phase)
+- Collaborating with browser vendors, documentation maintainers, and accessibility experts
+- Scoping the dataset shape and testing methodology
+- Running workshops and surveys to understand the needs of developers, accessibility
+  professionals, and developer tooling maintainers.
+- Identifying integration paths into existing resources like MDN
 
-If your organisation is committed to accessibility and improving the developer experience, this is an opportunity to support foundational work that has the potential to reshape how accessibility is implemented and understood on the web.
-You can support by:
-- Directly emailing me: lola@lolaslab.co
-- [Sponsoring on Open Collective](https://give.lolaslab.co)
-- ~~GitHub Sponsors~~
+## Reading Material
+- [Technical Gap & Scoping Report](/technical-gap-analysis-scope.md):
+  Read the full report to explore what we’ve learned, what’s still unknown, and what's next.
+- [Milestones](/milestones.md): Learn more about how we're measuring success for this
+  phase of the project.  
 
+## Get Involved
 
+If your organisation cares about accessibility and better tooling for developers,
+ACD is your chance to invest in infrastructure that makes the web work for everyone.
+
+**Sponsor**: [Open Collective](https://give.lolaslab.co)
+**Email**: lola@lolaslab.co
