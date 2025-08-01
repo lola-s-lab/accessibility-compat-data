@@ -48,7 +48,10 @@ to the accessibility tree **and** be supported by the AT.
 
 ## What ACD Is Not
 ACD is not an auditing tool and doesn’t evaluate entire websites. ACD does not define
-a baseline, or mark features as accessible or inaccessible.
+a baseline, or mark features as generally accessible or inaccessible. 
+
+ACD should be used to identify potential accessibility gaps and opportunities
+for developers to implement accessibility fallbacks for web features where necessary.
 
 ## Current Focus (Research Phase)
 - Collaborating with browser vendors, documentation maintainers, and accessibility experts
